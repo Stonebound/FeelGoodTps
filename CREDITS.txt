@@ -1,0 +1,4 @@
+Credits to all SpongePowered contributors https://github.com/SpongePowered/SpongeCommon
+Original idea by amaranth (https://github.com/amaranth)
+
+https://github.com/SpongePowered/SpongeCommon/commit/77bca1afb32254ccaab0548b3c42072a97f8f75a

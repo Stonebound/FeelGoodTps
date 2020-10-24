@@ -1,0 +1,29 @@
+{
+    "minVersion": "0.8",
+    "package": "net.stonebound.feelgoodtps.mixin",
+    "refmap": "mixins.feelgoodtps.refmap.json",
+    "mixins": [
+        "entity.AgeableEntityMixin_RealTime",
+        "entity.EntityMixin_RealTime",
+        "entity.LivingEntityMixin_RealTime",
+        "entity.MobEntityMixin_RealTime",
+        "entity.item.ItemEntityMixin_RealTime",
+        "entity.item.ExperienceOrbEntityMixin_RealTime",
+        "entity.monster.ZombieVillagerEntityMixin_RealTime",
+        "entity.player.PlayerEntityMixin_RealTime",
+        "entity.player.ServerPlayerEntityMixin_RealTime",
+        "network.play.ServerPlayNetHandlerMixin_RealTime",
+        "server.MinecraftServerMixin_RealTime",
+        "server.management.PlayerInteractionManagerMixin_RealTime",
+        "tileentity.TileEntityMixin",
+        "tileentity.AbstractFurnaceTileEntityMixin_RealTime",
+        "tileentity.BrewingStandTileEntityMixin_RealTime",
+        "world.WorldMixin_RealTime",
+        "world.server.ServerWorldMixin_RealTime"
+    ],
+    "server": [
+    ],
+    "injectors": {
+        "defaultRequire": 1
+    }
+}
