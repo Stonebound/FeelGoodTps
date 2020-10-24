@@ -52,6 +52,7 @@ public abstract class PlayerEntityMixin_RealTime extends LivingEntityMixin_RealT
         this.xpCooldown = Math.max(0, this.xpCooldown - ticks);
     }
 
+    // TODO: these slices are causing issues
 //    @Redirect(
 //        method = "tick",
 //        at = @At(

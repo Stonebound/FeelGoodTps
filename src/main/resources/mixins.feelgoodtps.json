@@ -11,7 +11,6 @@
         "entity.item.ExperienceOrbEntityMixin_RealTime",
         "entity.monster.ZombieVillagerEntityMixin_RealTime",
         "entity.player.PlayerEntityMixin_RealTime",
-        "entity.player.ServerPlayerEntityMixin_RealTime",
         "network.play.ServerPlayNetHandlerMixin_RealTime",
         "server.MinecraftServerMixin_RealTime",
         "server.management.PlayerInteractionManagerMixin_RealTime",

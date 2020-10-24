@@ -92,6 +92,7 @@ public abstract class EntityMixin_RealTime {
         this.portalCounter += ticks;
     }
 
+    // TODO: check if works, was moved from ServerPlayerEntity
     @Redirect(
         method = "decrementTimeUntilPortal",
         at = @At(
