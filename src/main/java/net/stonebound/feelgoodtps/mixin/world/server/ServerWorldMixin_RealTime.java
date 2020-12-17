@@ -38,7 +38,7 @@ import net.stonebound.feelgoodtps.mixin.world.WorldMixin_RealTime;
 @Mixin(ServerWorld.class)
 public abstract class ServerWorldMixin_RealTime extends WorldMixin_RealTime implements RealTimeTrackingBridge {
 
-    @Shadow public abstract void func_241114_a_(long p_241114_1_);
+    @Shadow public abstract void setDayTime(long p_241114_1_);
 
     @Inject(method = "tick", at = @At("HEAD"))
     private void realTimeImpl$fixTimeOfDayForRealTime(CallbackInfo ci) {
@@ -50,7 +50,7 @@ public abstract class ServerWorldMixin_RealTime extends WorldMixin_RealTime impl
             long diff = this.realTimeBridge$getRealTimeTicks() - 1;
             // Don't set if we're not changing it as other mods might be listening for changes
             if (diff > 0) {
-                this.func_241114_a_(this.worldInfo.getDayTime() + diff);
+                this.setDayTime(this.worldInfo.getDayTime() + diff);
             }
         }
     }
