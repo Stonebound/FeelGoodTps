@@ -1,0 +1,26 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.stonebound.feelgoodtps.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "mixins": [
+    "entity.AgeableMobMixin_RealTime",
+    "entity.EntityMixin_RealTime",
+    "entity.ExperienceOrbMixin_RealTime",
+    "entity.LivingEntityMixin_RealTime",
+    "entity.MobMixin_RealTime",
+    "entity.PortalProcessorMixin_RealTime",
+    "entity.item.ItemEntityMixin_RealTime",
+    "entity.monster.ZombieVillagerMixin_RealTime",
+    "entity.player.PlayerMixin_RealTime",
+    "server.MinecraftServerMixin_RealTime",
+    "server.level.ServerPlayerGameModeMixin_RealTime",
+    "server.network.ServerGamePacketListenerImplMixin_RealTime",
+    "world.clock.ServerClockManagerMixin_RealTime",
+    "world.level.block.entity.AbstractFurnaceBlockEntityMixin_RealTime",
+    "world.level.block.entity.BrewingStandBlockEntityMixin_RealTime"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

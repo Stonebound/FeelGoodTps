@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "feelgoodtps",
+  "version": "${mod_version}",
+  "name": "Feel Good TPS",
+  "description": "Keeps furnaces, brewing, block breaking, animal growth, despawn timers and the day cycle running at real-time speed while the server lags.",
+  "authors": [
+    "amaranth",
+    "phit",
+    "SpongePowered contributors"
+  ],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/feelgoodtps",
+    "issues": "https://github.com/Stonebound/FeelGoodTps/issues",
+    "sources": "https://github.com/Stonebound/FeelGoodTps"
+  },
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.stonebound.feelgoodtps.fabric.FeelGoodTpsFabric"
+    ]
+  },
+  "mixins": [
+    "feelgoodtps.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${fabric_loader_version}",
+    "minecraft": "~${minecraft_version}",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}

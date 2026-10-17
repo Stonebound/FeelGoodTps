@@ -1,0 +1,32 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "MIT"
+issueTrackerURL = "https://github.com/Stonebound/FeelGoodTps/issues"
+
+[[mods]]
+modId = "feelgoodtps"
+version = "${mod_version}"
+displayName = "Feel Good TPS"
+displayURL = "https://www.curseforge.com/minecraft/mc-mods/feelgoodtps"
+credits = "Thanks to amaranth for writing the original implementation, the SpongePowered authors for maintaining it"
+authors = "amaranth, phit, SpongePowered contributors"
+description = '''
+Keeps furnaces, brewing, block breaking, animal growth, despawn timers and the day cycle running at real-time speed while the server lags.
+'''
+
+[[dependencies.feelgoodtps]]
+modId = "neoforge"
+type = "required"
+versionRange = "[26.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.feelgoodtps]]
+modId = "minecraft"
+type = "required"
+versionRange = "[${minecraft_version},)"
+ordering = "NONE"
+side = "BOTH"
+
+[[mixins]]
+config = "feelgoodtps.mixins.json"
